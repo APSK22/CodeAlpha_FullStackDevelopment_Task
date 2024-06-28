@@ -2,7 +2,12 @@
 
 ## Overview
 
+
 The Expense Tracker is a React application that assists you in managing your finances by monitoring your income and expenses. It offers a clear summary of your balance and a detailed list of all transactions.
+
+https://github.com/APSK22/CodeAlpha_FullStackDevelopment_Task/assets/158535097/f2f8dd11-8c9e-43b6-8f99-6490b863174e
+
+
 
 ## Features
 
