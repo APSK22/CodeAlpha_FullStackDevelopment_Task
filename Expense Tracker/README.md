@@ -2,96 +2,87 @@
 
 ## Overview
 
-This Expense Tracker is a React application that helps you manage your finances by tracking your income and expenses. It provides a clear overview of your balance, as well as a detailed list of transactions.
+The Expense Tracker is a React application that assists you in managing your finances by monitoring your income and expenses. It offers a clear summary of your balance and a detailed list of all transactions.
 
 ## Features
 
 - Display current balance
-- Track income and expenses separately
-- Add new transactions (income or expense)
-- List all transactions
-- Remove transactions from the list
-- Context API for state management
+- Separate tracking for income and expenses
+- Add new income or expense transactions
+- View all transactions in a list
+- Delete transactions from the list
+- State management using Context API
 
 ## Installation
 
-### Prerequisites
+### Requirements
 
-- Node.js installed on your system
+- Node.js installed on your machine
 - npm (Node Package Manager) or yarn
 
-### Steps
+### Installation Steps
 
-1. **Clone the repository**
 
-```bash
-git clone https://github.com/ashishalf/expenseTracker.git
-cd expenseTracker
-```
+1. **Install dependencies**
 
-2. **Install the required packages**
+    Using npm:
+    ```bash
+    npm install
+    ```
 
-Using npm:
-```bash
-npm install
-```
+    Using yarn:
+    ```bash
+    yarn install
+    ```
 
-Using yarn:
-```bash
-yarn install
-```
+2. **Run the application**
 
-3. **Start the application**
+    Using npm:
+    ```bash
+    npm start
+    ```
 
-Using npm:
-```bash
-npm start
-```
+    Using yarn:
+    ```bash
+    yarn start
+    ```
 
-Using yarn:
-```bash
-yarn start
-```
-
-The application will start on `http://localhost:3000`.
+   
 
 ## Usage
 
-1. **Open the application in your browser**
 
-   Navigate to `http://localhost:3000`.
+1. **Manage your financial records**
 
-2. **Track your finances**
+    - View your current balance displayed at the top.
+    - Check a breakdown of your income and expenses.
+    - Add new transactions via the provided form.
+    - View and delete transactions from the list.
 
-   - View your current balance at the top.
-   - See a summary of your income and expenses.
-   - Add new transactions using the form provided.
-   - View the list of all transactions and delete any transaction if needed.
 
-## Code Explanation
 
 ### Components
 
-- **Header**: Displays the application header.
-- **Balance**: Shows the current balance.
-- **IncomeExpenses**: Displays a summary of income and expenses.
-- **TransactionList**: Lists all transactions.
+- **Header**: Displays the application's header.
+- **Balance**: Shows the current financial balance.
+- **IncomeExpenses**: Displays a breakdown of income and expenses.
+- **TransactionList**: Lists all the transactions.
 - **AddTransaction**: Form to add new transactions.
 
 ### Context API
 
-- **GlobalProvider**: Provides the global state to the application using Context API.
+- **GlobalProvider**: Manages the global state for the application using Context API.
 
-### Styles
+### Styling
 
-- **App.css**: Contains the styles for the application.
+- **App.css**: Contains all the styles for the application.
 
-### Application Structure
+### Application Layout
 
-The `App` component wraps all the components with the `GlobalProvider` to manage the global state. Each component is responsible for a specific part of the application:
+The `App` component wraps all other components with the `GlobalProvider` to manage the global state. Each component serves a specific purpose:
 
-- `Header`: Displays the title.
-- `Balance`: Shows the current balance by calculating the difference between income and expenses.
-- `IncomeExpenses`: Displays the total income and total expenses separately.
+- `Header`: Displays the app title.
+- `Balance`: Computes and displays the current balance by subtracting expenses from income.
+- `IncomeExpenses`: Shows the total income and total expenses separately.
 - `TransactionList`: Renders a list of transactions, each with a delete button.
-- `AddTransaction`: Provides a form to add new transactions (income or expense).
+- `AddTransaction`: Form to add new transactions (income or expense).
